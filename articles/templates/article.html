@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Статьи</title>
+</head>
+<body>
+<h1>{{ article.title }}</h1>
+<hr>
+<b>Содержание: </b>{{ article.content }}<br>
+<b>Категория: </b><a href="/category/{{ article.category.id }}">{{ article.category }}</a><br>
+<img src="article.photo" alt="Здесь должно быть фото">
+<hr>
+<a href="/">На главную</a>
+</body>
+</html>
