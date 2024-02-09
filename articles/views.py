@@ -55,7 +55,7 @@ def createarticles(request):
         form = ArticlesForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
-            return render(request,'home.html')
+            return redirect('/')
     else:
         form = ArticlesForm()
     return render(request, 'createarticles.html', {'form': form})
